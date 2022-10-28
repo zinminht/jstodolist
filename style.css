@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    padding: 15px;
+}
+
+h3{
+    color: #777;
+    font-size: 23px;
+    border-bottom: 1px dashed #777;
+    line-height: 70px;
+
+    margin: 0;
+    padding: 0;
+
+    opacity: .8;
+}
+
+small{
+    color: #888;
+    text-align: right;
+
+    display: block;
+    margin-top: 10px;
+}
+
+.form{
+    margin-top: 20px;
+}
+
+.form-control{
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid orange;
+
+    padding: 10px;
+
+    transition: all .8s;
+}
+
+.form-control:focus{
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+
+.list-group{
+    height: 250px;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    overflow-y: scroll;
+}
+
+.list-group li{
+    background-color: #f6f6f6;
+    font-size: 15px;
+    border: 1px solid #ddd;
+
+    padding: 15px;
+    margin-top: -1px;
+
+    cursor: pointer;
+}
+
+.list-group li:hover{
+    background-color: #f1f1f1;
+}
+
+.list-group li.done{
+    color: #777;
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.list-group li.done::after{
+    content: '\f00c';
+     font-family: FontAwesome; /* for version 6 */
+    float: right;
+}
